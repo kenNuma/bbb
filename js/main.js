@@ -5,12 +5,12 @@ $(function () {
   ハンバーガ―メニュー
   ===================================================*/
   // ハンバーガーメニューをクリックした時
-  $("").on("click", function () {
-    $("").toggleClass("");
+  $(".hunberger").on("click", function () {
+    $("header").toggleClass("open");
   });
   // メニューのリンクをクリックした時
-  $("").on("click", function () {
-    $("").toggleClass("");
+  $("nav a").on("click", function () {
+    $("header").toggleClass("open");
   });
 
   /*=================================================
