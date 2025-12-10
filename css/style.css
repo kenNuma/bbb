@@ -332,7 +332,7 @@ nav a {
     border-right: 15px solid rgb(194, 229, 218);
     left: 0;
     top: 60%;
-    margin-left: -30px;
+    margin-left: -28px;
 }
 
 .revers .speech-bubble p::before {
@@ -342,7 +342,7 @@ nav a {
     border-left: 15px solid rgb(194, 229, 218);
     right: 0;
     top: 60%;
-    margin-right: -30px;
+    margin-right: -28px;
 }
 
 .voice-contents .speech-bubble{
@@ -354,4 +354,38 @@ nav a {
 }
 .revers .revers-reset {
     transform: scaleX(-1);
+}
+
+/*   overview   */
+
+.overview {
+    background: url(../img/bg.gif);
+    padding: 60px 0;
+    margin-bottom: 120px;
+}
+
+.overview-list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.overview-list li{
+    width: 48%;
+    background-color: white;
+    border-radius: 15px;
+    padding: 60px;
+    margin-bottom: 32px;
+}
+
+.overview-item h3{
+    font-size: 1.75rem;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.overview-item h4{
+    font-size: 1.125rem;
+    text-align: center;
+    margin-bottom: 30px;
 }
