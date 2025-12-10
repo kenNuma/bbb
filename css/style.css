@@ -225,8 +225,7 @@ nav a {
     object-fit: cover;
 }
 
-/*   reason   */
-
+/* コンテンツ共用 */
 .section-title {
     font-size: 2.25rem;
     text-align: center;
@@ -245,6 +244,12 @@ nav a {
     transform: translateX(-50%);
 }
 
+
+/*   reason   */
+.reason {
+    margin-bottom: 80px;
+}
+
 .reason-contents {
     background-color: #ff2a2a;
     padding: 80px 0;
@@ -259,8 +264,11 @@ nav a {
     padding: 50px;
     display: flex;
     color: black;
-    margin-bottom: 40px;
     align-items: center;
+}
+
+.reason-content-item:first-of-type {
+    margin-bottom: 40px;
 }
 
 .reason-content-item img{
@@ -279,4 +287,71 @@ nav a {
 
 .content-right {
     margin-left: auto;
+}
+
+/*   voice   */
+.voice {
+    margin-bottom: 120px;
+}
+
+.voice-contents {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 60px;
+}
+
+.student-item {
+    font-size: 0.75rem;
+    text-align: center;
+}
+
+
+.student-item img {
+    width: 120px;
+    height: 120px;
+    background-color: gray;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.speech-bubble {
+    width: 60%;
+}
+
+.speech-bubble p{
+    background-color: rgb(194, 229, 218);
+    border-radius: 15px;
+    padding: 20px;
+    position: relative;
+}
+
+.nomal .speech-bubble p::before {
+    content: "";
+    position: absolute;
+    border: 15px solid transparent;
+    border-right: 15px solid rgb(194, 229, 218);
+    left: 0;
+    top: 60%;
+    margin-left: -30px;
+}
+
+.revers .speech-bubble p::before {
+    content: "";
+    position: absolute;
+    border: 15px solid transparent;
+    border-left: 15px solid rgb(194, 229, 218);
+    right: 0;
+    top: 60%;
+    margin-right: -30px;
+}
+
+.voice-contents .speech-bubble{
+    margin-left: 25px;
+}
+
+.revers {
+    transform: scaleX(-1);
+}
+.revers .revers-reset {
+    transform: scaleX(-1);
 }
