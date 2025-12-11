@@ -29,7 +29,6 @@ ul {
 .container {
     max-width: 860px;
     margin: 0 auto;
-
 }
 
 /* header */
@@ -293,6 +292,7 @@ nav a {
     font-size: 1.125rem;
 }
 .reason-text span{
+    font-weight: bold;
     font-size: 1.75rem;
     color: #ff2a2a;
 }
@@ -468,4 +468,115 @@ footer {
 .footer-logo {
     font-size: 0.625rem;
     text-align: center;
+}
+
+
+
+@media(max-width: 900px) {
+
+    header {
+        padding: 25px 0 0 25px;
+    }
+
+    /* 共通 */
+    .container {
+        padding: 0 16px;
+    }
+
+    
+    .hunberger {
+        width: 75px;
+        height: 75px;
+    }
+
+    .experience {
+        margin-top: 100vh - 75px;
+        height: 490px;
+        margin-bottom: 80px;
+    }
+
+    .experience-image {
+        /* display: block; */
+        width: 100%;
+        height: 300px;
+    }
+
+    .experience-image img{
+        height: 300px;
+    }
+
+    .experience-texts {
+        width: calc(100% - 36px);
+        top: 310px;
+        left: 16px;
+    }
+    .experience-texts p {
+        font-size: 1.75rem;
+        margin-bottom: 10px;
+    }
+    .experience-texts a {
+        width: 100%;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .section-title::after {
+        width: 80px;
+    }
+
+    .reason-content-item {
+        width: 95%;
+        justify-content: center;
+    }
+
+    .voice-contents {
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    .speech-bubble {
+        margin-bottom: 30px;
+        width: 100%;
+    }
+
+    .voice-contents .speech-bubble{
+        margin-left: 0;
+    }
+
+    .nomal .speech-bubble p::before {
+        border: 15px solid transparent;
+        border-top: 15px solid rgb(194, 229, 218);
+        left: 50%;
+        transform: translate(50%);
+        top: 100%;
+        margin-bottom: -28px;
+    }
+
+    .revers .speech-bubble p::before {
+        border: 15px solid transparent;
+        border-top: 15px solid rgb(194, 229, 218);
+        right: 50%;
+        transform: translate(-50%);
+        top: 100%;
+        margin-bottom: -28px;
+    }
+
+    .overview-list li{
+        width: 100%;
+        padding: 30px;
+    }
+
+    .item-field {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .item-field .category-item:nth-child(1) {
+        margin-bottom: 20px;
+    }
+    .item-field .category-item:nth-child(2) {
+        margin-bottom: 20px;
+    }
+
 }
