@@ -389,3 +389,36 @@ nav a {
     text-align: center;
     margin-bottom: 30px;
 }
+
+/*   application   */
+
+.application {
+    text-align: center;
+    margin-bottom: 120px;
+}
+
+.application h2 {
+    font-size: 2rem;
+}
+
+.application p {
+    margin-bottom: 40px;
+}
+
+.application a {
+    font-size: 1.75rem;
+    font-weight: bold;
+    padding: 15px;
+    display: block;
+    width: 100%;
+    background-color: #ff2a2a;
+    border: 2px solid #ff2a2a;
+    color: white;
+    border-radius: 40px;
+    transition: 0.5s;
+}
+
+.application a:hover {
+    background-color: transparent;
+    color: #ff2a2a;
+}
