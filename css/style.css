@@ -290,9 +290,6 @@ nav a {
     transform: translateX(-50%);
 }
 
-
-
-
 /*   reason   */
 .reason {
     margin-bottom: 80px;
@@ -334,11 +331,21 @@ nav a {
 
 .content-right {
     margin-left: auto;
-    animation: move-left 3s infinite linear;
+    opacity: 0;
+    transform: translate(50%);
 }
 
 .content-left {
-    animation: move-right 3s infinite linear;
+    opacity: 0;
+    transform: translate(-50%);
+}
+
+.slide-left {
+    animation: move-left 0.5s 0s 1 forwards;
+}
+
+.slide-right {
+    animation: move-right 0.5s 0s 1 forwards;
 }
 
 @keyframes move-right {
@@ -424,15 +431,26 @@ nav a {
 }
 
 .nomal {
-    animation: scale-visible 3s infinite;
+    opacity: 0;
+    transform: scale(0.1, 0.1);
 }
 
 .revers {
-    animation: scale-visible-reverse 3s infinite;
-    transform: scaleX(-1);
+    opacity: 0;
+    transform: scale(0.1) scaleX(-1);
+    /* transform: scaleX(-1); */
 }
+
 .revers .revers-reset {
     transform: scaleX(-1);
+}
+
+.nomal-visible {
+    animation: scale-visible 0.5s 0s 1 forwards;
+}
+
+.revers-visible {
+    animation: scale-visible-reverse 0.5s 0s 1 forwards;
 }
 
 @keyframes scale-visible {
