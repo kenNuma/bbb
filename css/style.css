@@ -139,6 +139,18 @@ nav a {
     border: white solid 1px;
     padding: 15px 35px;
     transition: 0.5s;
+    position: relative;
+}
+
+.hunberger-btn::after {
+    content: "";
+    width: 250px;
+    border-bottom: white solid 1px;
+    border-right: white solid 1px;
+    right: -5px;
+    bottom: -5px;
+    padding: 15px 35px;
+    position: absolute;
 }
 
 .hunberger-btn:hover {
@@ -421,4 +433,39 @@ nav a {
 .application a:hover {
     background-color: transparent;
     color: #ff2a2a;
+}
+
+/*      footer      */
+footer {
+    background-color: #e8e8e8;
+    padding: 60px 0 20px 0;
+}
+
+.item-field {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 60px;
+}
+
+.category-item p {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.category-item li a {
+    font-size: 0.85rem;
+    color: #333;
+    margin-left: 15px;
+    transition: 0.3s;
+}
+
+.category-item li a:hover {
+    opacity: 0.8;
+}
+
+
+.footer-logo {
+    font-size: 0.625rem;
+    text-align: center;
 }
