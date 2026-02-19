@@ -35,7 +35,6 @@ ul {
 header {
     height: 100px;
     padding: 40px 0 0 50px;
-    /* padding: 25px 0 0 25px; */
 }
 
 .header-logo {
@@ -109,7 +108,6 @@ nav {
     opacity: 1;
     z-index: 20;
     visibility: visible;
-    /* display: block; */
 }
 
 nav a {
@@ -222,13 +220,6 @@ nav a {
     overflow: hidden;
 }
 
-/* .experience-image {
-    position: relative;
-    width: 100%;
-    height: 720px;
-    overflow: hidden;
-} */
-
 .experience-image li {
     position: absolute;
     top: 0;
@@ -250,8 +241,6 @@ nav a {
 }
 
 .experience-image img {
-    /* display    : block;
-    position   : absolute; */
     width: 100%;
     height: 720px;
     object-fit: cover;
@@ -332,12 +321,10 @@ nav a {
 .content-right {
     margin-left: auto;
     opacity: 0;
-    transform: translate(50%);
 }
 
 .content-left {
     opacity: 0;
-    transform: translate(-50%);
 }
 
 .slide-left {
@@ -438,7 +425,6 @@ nav a {
 .revers {
     opacity: 0;
     transform: scale(0.1) scaleX(-1);
-    /* transform: scaleX(-1); */
 }
 
 .revers .revers-reset {

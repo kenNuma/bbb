@@ -1,9 +1,4 @@
-// 穴埋め形式です。空いている箇所を埋めて実装してください
-
 $(function () {
-  /*=================================================
-  ハンバーガ―メニュー
-  ===================================================*/
   // ハンバーガーメニューをクリックした時
   $(".hunberger").on("click", function () {
     $("header").toggleClass("open");
@@ -13,9 +8,7 @@ $(function () {
     $("header").toggleClass("open");
   });
 
-  /*=================================================
-  Inview（画面に表示されたタイミングで処理を実行）
-  ===================================================*/
+  //Inview（画面に表示されたタイミングで処理を実行）
   $(window).scroll(function () {
     $(".content-left").each(function () {
 
@@ -47,7 +40,7 @@ $(function () {
     });
   });
 
-    $(window).scroll(function () {
+  $(window).scroll(function () {
     $(".nomal").each(function () {
 
       var scroll = $(window).scrollTop();
@@ -63,7 +56,7 @@ $(function () {
     });
   });
 
-    $(window).scroll(function () {
+  $(window).scroll(function () {
     $(".revers").each(function () {
 
       var scroll = $(window).scrollTop();
@@ -78,7 +71,6 @@ $(function () {
       }
     });
   });
-  // これを複数使う
 });
 
 
